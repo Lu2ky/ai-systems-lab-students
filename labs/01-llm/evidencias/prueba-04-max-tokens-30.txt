@@ -1,0 +1,14 @@
+Asistente del Curso de IA  (groq · openai/gpt-oss-20b)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Explica detalladamente la arquitectura completa de un Transformer, incluyendo em
+--------------------------------
+
+Asistente: 
+
+[finish_reason=length · tokens entrada=264 salida=30]
+
+Tú: 

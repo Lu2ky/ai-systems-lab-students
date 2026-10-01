@@ -1,0 +1,93 @@
+Asistente del Curso de IA  (groq · openai/gpt-oss-20b)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Explica qué es un transformer.
+--------------------------------
+
+Asistente: Un **transformer** es un tipo de arquitectura de red neuronal diseñada para procesar secuencias de datos (texto, audio, etc.) sin recurrir a mecanismos de recurrencia o convolución. Su innovación principal radica en el uso de **auto‑atención** (self‑attention), que permite que cada posición de la secuencia se relacione directamente con todas las demás, capturando dependencias a largo plazo de manera eficiente.
+
+### Componentes clave
+
+| Parte | Función principal | Comentario breve |
+|-------|-------------------|------------------|
+| **Embeddings** | Convertir tokens en vectores numéricos | Ya los conocen, se usan como entrada. |
+| **Positional Encoding** | Añadir información de posición | Permite que el modelo distinga el orden. |
+| **Capa de atención multi‑cabeza** | Calcular relaciones entre todas las posiciones | Cada “cabeza” aprende un patrón de atención distinto. |
+| **Capa feed‑forward** | Transformar la salida de atención | Normalmente dos capas lineales con activación. |
+| **Normalización y residual** | Facilitar el entrenamiento | Se aplican antes y después de cada sub‑capa. |
+
+### Arquitectura típica
+
+1. **Encoder** (codificador)  
+   - Conjunto de bloques idénticos, cada uno con atención multi‑cabeza + feed‑forward.  
+   - Produce una representación contextualizada de la entrada.
+
+2. **Decoder** (decodificador)  
+   - Similar al encoder, pero con una capa adicional de atención “cross‑attention” que mira al encoder.  
+   - Genera la salida secuencialmente, bloqueando la atención a posiciones futuras (masking).
+
+### Ventajas sobre RNNs y CNNs
+
+- **Paralelización**: todas las posiciones se procesan simultáneamente, lo que acelera el entrenamiento.  
+- **Captura de dependencias largas**: la
+
+[finish_reason=length · tokens entrada=248 salida=512]
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Explica qué es un transformer.
+[assistant] Un **transformer** es un tipo de arquitectura de red neuronal diseñada para proc
+[user] Dame un ejemplo de eso.
+--------------------------------
+
+Asistente: ### Ejemplo práctico: “Self‑attention” en un transformer
+
+Supongamos que queremos procesar la frase corta
+
+> **“El gato duerme”**
+
+Para simplificar, trabajaremos con **solo 3 tokens** y con **vectores de dimensión 4** (en la práctica se usan cientos o miles, pero aquí sirve para ilustrar).
+
+| Token | Embedding (ejemplo) |
+|-------|---------------------|
+| El    | \([0.1, 0.0, 0.3, 0.2]\) |
+| gato  | \([0.4, 0.5, 0.1, 0.0]\) |
+| duerme| \([0.0, 0.2, 0.4, 0.3]\) |
+
+#### 1. Generar Q, K y V
+
+Para cada token multiplicamos su embedding por tres matrices de pesos (todas de tamaño \(4 \times 4\)). Supongamos que las matrices son:
+
+\[
+W_Q = \begin{bmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix},
+\quad
+W_K = \begin{bmatrix}
+0 & 1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & 1 & 0
+
+[finish_reason=length · tokens entrada=677 salida=512]
+
+Tú: (historial borrado)
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] ¿Qué te pregunté antes?
+--------------------------------
+
+Asistente: La última pregunta que me hiciste fue: **“¿Qué te pregunté antes?”**
+
+[finish_reason=stop · tokens entrada=247 salida=208]
+
+Tú: 

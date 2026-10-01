@@ -40,21 +40,42 @@ class LLMClient:
         max_tokens: int | None = None,
         json_mode: bool = False,
     ) -> LLMResponse:
-        # TODO 1: llamar a la API de Chat Completions.
-        #   - Usa self._client.chat.completions.create(...)
-        #   - Parámetros: model, messages, temperature, max_tokens.
-        #     Si temperature/max_tokens son None, usa los valores de self.settings.
-        #   - Si json_mode es True, agrega response_format={"type": "json_object"}.
-        #   - Captura openai.APIError y relánzalo como LLMError
-        #     (la aplicación no debe depender de las excepciones del SDK).
-        #
-        # TODO 2: construir y devolver un LLMResponse a partir de la respuesta:
-        #   - completion.choices[0].message.content  → text
-        #   - completion.model                       → model
-        #   - completion.choices[0].finish_reason    → finish_reason
-        #   - completion.usage.prompt_tokens / completion_tokens
-        raise NotImplementedError("Completa LLMClient.chat")
+        actual_temperature = (
+            temperature
+            if temperature is not None
+            else self.settings.temperature
+        )
+        actual_max_tokens = (
+            max_tokens
+            if max_tokens is not None
+            else self.settings.max_tokens
+        )
 
+        request_params = {
+            "model": self.settings.model,
+            "messages": messages,
+            "temperature": actual_temperature,
+            "max_tokens": actual_max_tokens,
+        }
+
+        if json_mode:
+            request_params["response_format"] = {"type": "json_object"}
+
+        try:
+            completion = self._client.chat.completions.create(**request_params)
+        except openai.APIError as exc:
+            raise LLMError(str(exc)) from exc
+
+        choice = completion.choices[0]
+        usage = completion.usage
+
+        return LLMResponse(
+            text=choice.message.content or "",
+            model=completion.model,
+            finish_reason=choice.finish_reason,
+            prompt_tokens=usage.prompt_tokens if usage else 0,
+            completion_tokens=usage.completion_tokens if usage else 0,
+        )
 
 if __name__ == "__main__":
     # Prueba de humo: una sola llamada, sin interfaz ni historial.

@@ -1,0 +1,1 @@
+[configuración] Falta LLM_API_KEY. Copia .env.example como .env y agrega tu clave.

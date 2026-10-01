@@ -1,0 +1,93 @@
+Asistente del Curso de IA  (groq · openai/gpt-oss-20b)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Explica qué es un transformer.
+--------------------------------
+
+Asistente: Un **Transformer** es un modelo de arquitectura de redes neuronales diseñado para procesar secuencias de datos (texto, audio, etc.) sin recurrir a la recursividad o a la convolución. Su innovación principal es la **atención auto‑atención** (self‑attention), que permite que cada posición de la secuencia se relacione directamente con todas las demás posiciones, capturando dependencias a cualquier distancia con complejidad \(O(n^2)\) en lugar de \(O(n)\) o \(O(n^2)\) con recursión.
+
+### Estructura general
+
+1. **Encoder**  
+   - Conformado por \(L\) capas idénticas.  
+   - Cada capa tiene dos sub‑bloques:  
+     a) **Multi‑Head Self‑Attention**: calcula la atención de cada token sobre todos los demás, con varias “cabezas” que permiten capturar diferentes tipos de relaciones.  
+     b) **Feed‑Forward Posicional**: una red totalmente conectada (típicamente dos capas lineales con activación ReLU) aplicada a cada posición de forma independiente.  
+   - Se añaden **residual connections** y **normalización** (LayerNorm) entre los sub‑bloques.
+
+2. **Decoder**  
+   - También consta de \(L\) capas, pero cada una incluye tres sub‑bloques:  
+     a) **Masked Multi‑Head Self‑Attention** (para evitar que la posición \(i\) vea posiciones \(>i\)).  
+     b) **Multi‑Head Attention** sobre la salida del encoder (encoder‑decoder attention).  
+     c) **Feed‑Forward Posicional**.  
+   - Igual que el encoder, con residuals y normalización.
+
+### Componentes clave
+
+- **Positional Encoding**: dado que la atención no incorpora orden, se añaden codificaciones posicionales (seno/​coseno o aprendidas) a los embeddings de entrada para introducir información de posición.
+- **Multi‑Head Attention**: cada cabeza aprende una proyección distinta de queries
+
+[finish_reason=length · tokens entrada=248 salida=512]
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Explica qué es un transformer.
+[assistant] Un **Transformer** es un modelo de arquitectura de redes neuronales diseñado par
+[user] Dame un ejemplo de eso.
+--------------------------------
+
+Asistente: ### Ejemplo práctico: Atención de un Transformer con 3 tokens
+
+Supongamos que tenemos una oración muy corta con **3 tokens**:
+
+| Posición | Token | Embedding (dim = 4) |
+|----------|-------|---------------------|
+| 1        | “Hola”| \([0.1, 0.3, 0.5, 0.7]\) |
+| 2        | “mundo”| \([0.2, 0.4, 0.6, 0.8]\) |
+| 3        | “!”   | \([0.3, 0.5, 0.7, 0.9]\) |
+
+Para simplificar, usaremos **una sola cabeza de atención** (en la práctica se usan muchas cabezas, pero el cálculo es idéntico para cada una).
+
+#### 1. Proyecciones de Q, K y V
+
+Definimos tres matrices de pesos \(W_Q, W_K, W_V \in \mathbb{R}^{4\times4}\).  
+Para este ejemplo elegimos valores muy sencillos (puedes pensar en ellas como “cajas de transformación”):
+
+```
+W_Q = W_K = W_V = I_4   # identidad
+```
+
+Con la identidad, las proyecciones son simplemente los embeddings mismos:
+
+```
+Q = K = V = [[0.1, 0.3, 0.5, 0.7],
+             [0.2, 0.4, 0.6, 0.8],
+             [0.3, 0.5, 0.7, 0.9]]
+```
+
+#### 2. Matriz de puntuaciones (scores)
+
+
+
+[finish_reason=length · tokens entrada=703 salida=512]
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Explica qué es un transformer.
+[assistant] Un **Transformer** es un modelo de arquitectura de redes neuronales diseñado par
+[user] Dame un ejemplo de eso.
+[assistant] ### Ejemplo práctico: Atención de un Transformer con 3 tokens  Supongamos que te
+[user] ¿Qué te pregunté antes?
+--------------------------------
+
+Asistente: Antes me pediste: **“Dame un ejemplo de eso.”**  
+En ese contexto, te mostré un ejemplo práctico de cómo funciona la atención en un Transformer con una oración muy corta (3 tokens) y cómo se calculan las proyecciones Q, K y V, la matriz de puntuaciones y la salida de la atención. Si necesitas que profundice en algún paso o que cambie el ejemplo, avísame.
+
+[finish_reason=stop · tokens entrada=1089 salida=133]
+
+Tú: 

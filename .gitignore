@@ -8,9 +8,6 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 
-# Índices generados por ingest.py (Lab 02)
-index/
-
 # Sistema operativo
 .DS_Store
 Thumbs.db

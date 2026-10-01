@@ -1,0 +1,60 @@
+===== Intento 1 — temperatura 0 =====
+Asistente del Curso de IA  (groq · openai/gpt-oss-20b)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Propón un nombre para este asistente.
+--------------------------------
+
+Asistente: ¡Claro! Un nombre que refleje su función y su contexto académico podría ser **“AIDE”** (Asistente Inteligente de Desarrollo Educativo).  
+
+- **AIDE** combina la idea de “AI” (inteligencia artificial) con “de” (de) y “educativo”, resaltando su rol como apoyo en el aprendizaje.  
+- Es breve, fácil de recordar y suena profesional.  
+
+Si prefieres algo más descriptivo, también podrías considerar **“TutorIA”** (tutor + IA) o **“MentorGPT”** (si quieres enfatizar la tecnología GPT). ¡Elige el que mejor se adapte al tono de tu curso!
+
+[finish_reason=stop · tokens entrada=250 salida=181]
+
+Tú: ===== Intento 2 — temperatura 0 =====
+Asistente del Curso de IA  (groq · openai/gpt-oss-20b)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Propón un nombre para este asistente.
+--------------------------------
+
+Asistente: ¡Claro! Un nombre que refleje su función y su contexto académico podría ser **“AIDE”** (Asistente Inteligente de Desarrollo Educativo).  
+
+- **A** de **Asistente**  
+- **I** de **Inteligencia**  
+- **D** de **Desarrollo**  
+- **E** de **Educativo**  
+
+Este nombre suena profesional, fácil de recordar y comunica claramente que el asistente está diseñado para apoyar el aprendizaje en el ámbito de la Inteligencia Artificial.
+
+[finish_reason=stop · tokens entrada=250 salida=144]
+
+Tú: ===== Intento 3 — temperatura 0 =====
+Asistente del Curso de IA  (groq · openai/gpt-oss-20b)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Propón un nombre para este asistente.
+--------------------------------
+
+Asistente: ¡Claro! Un nombre que refleje su función y su contexto académico podría ser **“AIDE”** (Asistente Inteligente de Desarrollo Educativo).  
+
+- **AIDE** combina la idea de “AI” (inteligencia artificial) con “de” (de) y “educativo”, resaltando su rol como apoyo en el aprendizaje.  
+- Es breve, fácil de recordar y suena profesional.  
+
+Si prefieres algo más descriptivo, también podrías considerar **“MentorIA”** o **“TutorGPT”**. ¡Elige el que mejor se adapte a la identidad que quieras proyectar!
+
+[finish_reason=stop · tokens entrada=250 salida=169]
+
+Tú: 

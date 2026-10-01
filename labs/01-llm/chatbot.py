@@ -67,7 +67,20 @@ def main() -> None:
 
         # TODO 5: agrega al historial la pregunta del usuario y la respuesta del asistente
         #   (con los roles "user" y "assistant"). Primero ejecuta el chatbot SIN este paso
-        #   y pregúntale "¿Qué te pregunté antes?". Luego complétalo y repite la prueba.
+        #   y pregúntale "¿Qué te pregunté antes?". Luego complétalo y repite la prueba.      
+        history.append(
+            {
+                "role": "user",
+                "content": user_input,
+            }
+        )
+        history.append(
+            {
+                "role": "assistant",
+                "content": response.text,
+            }
+        )
+
 
 
 if __name__ == "__main__":

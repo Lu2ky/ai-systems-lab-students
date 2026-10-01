@@ -12,8 +12,7 @@ cada componente, cómo interactúan y qué esconden los frameworks.
 
 | Semana | Lab | Producto |
 |--------|-----|----------|
-| 1 | [`labs/01-llm`](labs/01-llm/) | Chatbot con LLM en Python (`Usuario → LLM`) |
-| 2 | [`labs/02-rag`](labs/02-rag/) | Chatbot RAG sobre los documentos del curso (`Usuario → RAG → LLM`) |
+| 1 | [`labs/01-llm`](labs/01-llm/README.md) | Chatbot con LLM en Python (`Usuario → LLM`) |
 
 Los siguientes labs se agregarán a este repositorio cada semana. Actualiza tu copia con `git pull`.
 
@@ -68,9 +67,8 @@ Todos los comandos se ejecutan **desde la raíz** del repositorio:
 uv run python labs/01-llm/chatbot.py
 ```
 
-La guía de cada lab (PDF) se publica en la tarea de Teams correspondiente, con objetivo,
-arquitectura, pasos, pruebas, preguntas de análisis y evidencias de entrega. Los puntos a
-completar están marcados con `TODO` en el código.
+Cada lab tiene su propio `README.md` con objetivo, arquitectura, pasos, pruebas, preguntas de
+análisis y evidencias de entrega. Los puntos a completar están marcados con `TODO` en el código.
 
 ## Estructura
 
@@ -81,6 +79,5 @@ ai-systems-lab-students/
 ├── uv.lock            versiones exactas de las dependencias
 ├── .env.example       plantilla de configuración (cópiala como .env)
 └── labs/              un lab por semana
-    ├── 01-llm/
-    └── 02-rag/
+    └── 01-llm/
 ```

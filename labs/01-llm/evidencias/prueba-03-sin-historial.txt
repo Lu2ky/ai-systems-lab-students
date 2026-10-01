@@ -1,0 +1,61 @@
+Asistente del Curso de IA  (groq · openai/gpt-oss-20b)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Explica qué es un transformer.
+--------------------------------
+
+Asistente: Un **transformer** es una arquitectura de red neuronal diseñada para procesar secuencias de datos (texto, audio, vídeo, etc.) sin recurrir a la recurrencia ni a la convolución. Su innovación principal radica en el uso exclusivo de mecanismos de **auto‑atención** (self‑attention) para capturar relaciones entre elementos de la secuencia, lo que permite paralelizar el entrenamiento y modelar dependencias a larga distancia de manera eficiente.
+
+### Estructura básica
+
+Un transformer típico se compone de dos bloques principales:
+
+| Bloque | Función | Componentes clave |
+|--------|---------|-------------------|
+| **Encoder** | Convierte la entrada en una representación contextualizada | 1) Multi‑Head Self‑Attention 2) Feed‑Forward (FFN) 3) Normalización y residual |
+| **Decoder** | Genera la salida paso a paso, condicionada a la entrada y a los tokens ya generados | 1) Multi‑Head Self‑Attention (masking causal) 2) Multi‑Head Attention sobre el encoder 3) FFN 4) Normalización y residual |
+
+Cada bloque está formado por **capa de atención** y **capa feed‑forward**. La atención multi‑head permite que la red preste atención a diferentes sub‑espacios de representación simultáneamente, mientras que la FFN (normalmente dos capas lineales con activación ReLU o GELU) introduce no linealidad y mezcla las dimensiones.
+
+### Mecanismo de atención
+
+Para cada token \(x_i\) se generan tres vectores:
+
+- **Query** \(Q_i = x_i W_Q\)
+- **Key** \(K_i = x_i W_K\)
+- **Value** \(V_i = x_i W_V\)
+
+La atención se calcula como:
+
+\[
+\text{Attention}(Q, K, V) = \text{softmax}\!\left(\frac{Q K^\top}{\sqrt{d_k}}\right) V
+\]
+
+donde \(d_k\
+
+[finish_reason=length · tokens entrada=248 salida=512]
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Dame un ejemplo de eso.
+--------------------------------
+
+Asistente: ¡Claro! Para poder darte un ejemplo útil, ¿podrías especificar a qué te refieres con “eso”? Por ejemplo, ¿necesitas un ejemplo de cómo funciona la atención en un Transformer, de cómo se construyen los embeddings, de un caso práctico de aplicación de un modelo Transformer, etc.? Así podré proporcionarte la información más relevante.
+
+[finish_reason=stop · tokens entrada=248 salida=248]
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] ¿Qué te pregunté antes?
+--------------------------------
+
+Asistente: No recuerdo haber recibido ninguna pregunta previa en esta conversación. Si tienes alguna duda o tema que quieras abordar, por favor indícalo y con gusto te ayudaré.
+
+[finish_reason=stop · tokens entrada=247 salida=125]
+
+Tú: 

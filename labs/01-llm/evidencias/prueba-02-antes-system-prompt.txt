@@ -1,0 +1,14 @@
+Asistente del Curso de IA  (groq · openai/gpt-oss-20b)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system] Eres un asistente útil.
+[user] ¿Cuándo es el primer parcial?
+--------------------------------
+
+Asistente: No dispongo de información específica sobre el calendario de exámenes. ¿Podrías indicarme a qué materia, curso o institución te refieres? Así podré ayudarte con la fecha exacta del primer parcial.
+
+[finish_reason=stop · tokens entrada=88 salida=169]
+
+Tú: 

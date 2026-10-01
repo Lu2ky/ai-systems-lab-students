@@ -1,0 +1,1 @@
+LLMResponse(text='Un Transformer es un modelo de aprendizaje profundo basado en mecanismos de atención que procesa secuencias de datos sin recurrir a estructuras recurrentes, lo que permite tareas como traducción automática y generación de texto con mayor paralelismo y eficiencia.', model='openai/gpt-oss-20b', finish_reason='stop', prompt_tokens=91, completion_tokens=132)

@@ -1,0 +1,14 @@
+Asistente del Curso de IA  (openrouter · minimax/minimax-m3)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Explica en una frase qué es un Transformer.
+--------------------------------
+
+Asistente: Un Transformer es una arquitectura de red neuronal que procesa secuencias mediante mecanismos de atención auto-regresiva, permitiendo modelar relaciones contextuales entre todos los tokens de forma paralela.
+
+[finish_reason=stop · tokens entrada=343 salida=99]
+
+Tú: 

@@ -1,0 +1,73 @@
+===== Intento 1 — temperatura 1.2 =====
+Asistente del Curso de IA  (groq · openai/gpt-oss-20b)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Propón un nombre para este asistente.
+--------------------------------
+
+Asistente: ### Posibles nombres para el asistente
+
+| Nº | Nombre propuesto | Por qué encaja | Comentario |
+|----|-----------------|----------------|------------|
+| 1 | **AIDE** (Asistente de Inteligencia Artificial Educativa) | Es breve, usa la sigla “AI” en español y destaca que es un soporte educativo. | Muy fácil de recordar y pronunciar. |
+| 2 | **MentorIA** | “Mentor” indica guía y “IA” resalta la especialidad del curso. | Sugiere un acompañamiento personalizado. |
+| 3 | **AIPedagógico** | Combina “AI” y “pedagógico”, subrayando su función de aprendizaje. | Evoca la misión de facilitar la comprensión de conceptos complejos. |
+| 4 | **TutorTransform** | Hace referencia directa al núcleo de los Transformers y al papel de tutor. | Ideal para enfatizar la expertise en Transformers. |
+| 5 | **IntelliGuide** | “Intelli” evoca inteligencia y “Guide” indica orientación. | Nombre de origen inglés que sigue la tradición de herramientas AI, pero fácilmente adaptable al español. |
+
+**Recomendación:** Elige el que mejor refleje el tono del curso y la audiencia. Si el enfoque está muy centrado en los Transformers, *TutorTransform* podría ser lo más pertinente; si buscas un nombre más amplio, *AIDE* o *MentorIA* son opciones claras y profesionales.
+
+[finish_reason=stop · tokens entrada=250 salida=444]
+
+Tú: ===== Intento 2 — temperatura 1.2 =====
+Asistente del Curso de IA  (groq · openai/gpt-oss-20b)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Propón un nombre para este asistente.
+--------------------------------
+
+Asistente: ¡Claro! Aquí tienes algunas sugerencias de nombres que podrían resonar con un asistente académico especializado en Inteligencia Artificial:
+
+| # | Nombre | Motivo |
+|---|--------|--------|
+| 1 | **MentorIA** | Evoca la idea de un tutor que guía a los estudiantes en el mundo de la IA. |
+| 2 | **TutorX** | “X” alude a la variable que suele aparecer en ecuaciones y algoritmos, resaltando el carácter dinámico del asistente. |
+| 3 | **AIXpert** | Combina “AI” y “expert”, indicando que la herramienta es experta en temas de IA. |
+| 4 | **AIGuía** | Refuerza la función de orientación y apoyo continuo. |
+| 5 | **Intellina** | Juega con “inteligencia” y “nina” (de “ninja”), sugiriendo agilidad y conocimiento profundo. |
+
+Puedes escoger el que mejor se ajuste a la personalidad que quieras proyectar: si prefieres algo más formal (MentorIA) o algo más lúdico y contemporáneo (TutorX). ¡Espero que te sea útil!
+
+[finish_reason=stop · tokens entrada=250 salida=311]
+
+Tú: ===== Intento 3 — temperatura 1.2 =====
+Asistente del Curso de IA  (groq · openai/gpt-oss-20b)
+Comandos: /reiniciar  /salir
+
+Tú: 
+--- Mensajes enviados al LLM ---
+[system]  Eres un asistente académico para estudiantes de un curso universitario de Intel
+[user] Propón un nombre para este asistente.
+--------------------------------
+
+Asistente: Aquí tienes algunas sugerencias de nombres para el asistente, acompañadas de una breve explicación de cada opción:
+
+| Nombre | Motivación | Ventajas |
+|--------|------------|----------|
+| **TutorIA** | Combina “Tutor” y la sigla IA (Inteligencia Artificial). Evoca claramente la función de guía académica. | Fácil de recordar, suena profesional y directamente relacionado con IA. |
+| **LumenAI** | “Lumen” (luz) simboliza claridad y aprendizaje; “AI” indica su naturaleza artificial. | Refleja la misión de iluminar el proceso de estudio. |
+| **InsightIA** | Sugiere que el asistente aporta “perspectivas” y “insights” en temas de IA. | Implica profundidad y análisis crítico. |
+| **Aide** | Juego de palabras entre “AI” y “guide”. | Suena amigable y fácil de pronunciar en varios idiomas. |
+| **AIPedagog** | Une IA con “Pedagogía”, indicando enfoque educativo. | Destaca el aspecto pedagógico de la ayuda. |
+
+Si deseas un estilo más informal, podrías usar algo como **“AI Buddy”** o **“AI Amigo”**, aunque ambos nombres están más orientados a una interacción más casual. Elige el que mejor encaje con la imagen que quieres proyectar para el asistente.
+
+[finish_reason=stop · tokens entrada=250 salida=409]
+
+Tú: 
