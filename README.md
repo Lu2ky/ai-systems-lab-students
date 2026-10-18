@@ -12,9 +12,16 @@ cada componente, cómo interactúan y qué esconden los frameworks.
 
 | Semana | Lab | Producto |
 |--------|-----|----------|
+<<<<<<< HEAD
 | 1 | [`labs/01-llm`](labs/01-llm/README.md) | Chatbot con LLM en Python (`Usuario → LLM`) |
+=======
+| 1 | [`labs/01-llm`](labs/01-llm/) | Chatbot con LLM en Python (`Usuario → LLM`) |
+| 2 | [`labs/02-rag`](labs/02-rag/) | Chatbot RAG sobre los documentos del curso (`Usuario → RAG → LLM`) |
+| 3 | [`labs/03-mcp`](labs/03-mcp/) | Asistente con tools y un servidor MCP (`Usuario → Asistente → LLM + Tools`) |
+| 4 | [`labs/04-agent-orchestration`](labs/04-agent-orchestration/) | Asistente que decide entre responder, usar RAG o invocar MCP (`Usuario → Orquestador → RAG + Tools + MCP`) |
+>>>>>>> upstream/main
 
-Los siguientes labs se agregarán a este repositorio cada semana. Actualiza tu copia con `git pull`.
+Actualiza tu copia con `git pull` cada semana.
 
 ## Requisitos
 
@@ -79,5 +86,12 @@ ai-systems-lab-students/
 ├── uv.lock            versiones exactas de las dependencias
 ├── .env.example       plantilla de configuración (cópiala como .env)
 └── labs/              un lab por semana
+<<<<<<< HEAD
     └── 01-llm/
+=======
+    ├── 01-llm/
+    ├── 02-rag/
+    ├── 03-mcp/
+    └── 04-agent-orchestration/
+>>>>>>> upstream/main
 ```
